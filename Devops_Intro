@@ -30,3 +30,28 @@ You can now use Git on your EC2 instance to manage your source code repositories
 4.Install the software using root user privilage and going to this path: 
 A. sudo su -
 B.Dont come out of the root to '/' always note to be inside root directory. It indicates as tilt '~'.
+
+5.Download JAVA : yum install java 
+info: https://www.java.com/en/download/help/linux_x64_install.html
+<Set JAVA as environment varibale, bcz Java can be used by every software>
+In Linux by default the software and libarary has been downloaded in usr/lib directory ==> /usr/lib/jvm/java-21-amazon-corretto.x86_64
+Edit .bash_profile in root ls -a with following commands:
+***********************************************************
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto.x86_64
+PATH=$JAVA_HOME
+
+************************************************************
+
+6.Install Maven : yum istall mvn
+wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+tar xzvf apache-maven-3.9.6-bin.tar.gz
+"wget": wget solely lets you download files from the httpspr ftp server. You give it a link and it will automaticlayy downloads the file where the link points to.It basically helps to download Binaries.
+info: https://maven.apache.org/download.cgi
