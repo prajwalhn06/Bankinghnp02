@@ -1,8 +1,9 @@
 Welcom to Devops Intro
 
 1.Create an EC2 instance wit Linux(username:ec2-user) or Ubuntu(username:ubuntu)
-Linux:to install use "yum"
-Ubuntu:to install use "apt-get"
+Linux:to install use "yum" (Yum or apt-get is the primary tool for getting, installing, deleting, querying and managing software packages)
+Ubuntu:to install use "apt-get" 
+info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/find-install-software.html
 
 2.Install Putty and create an Github account and create an token
 Github: https://github.com/prajwalhn06
@@ -23,6 +24,9 @@ E.2.Configure your Git settings with your username and password/Token to push in
 git push
 Username for 'https://github.com': prajwalhn06
 Password for 'https://prajwalhn06@github.com':<Github password or Token(it will be cretaed in Github->Settings->Developer setting->Personal access Token-> Generate token)>
-Token:
 
 You can now use Git on your EC2 instance to manage your source code repositories and collaborate with other developers.
+
+4.Install the software using root user privilage and going to this path: 
+A. sudo su -
+B.Dont come out of the root to '/' always note to be inside root directory. It indicates as tilt '~'.
