@@ -16,9 +16,13 @@ C.Install Git using the following command:
 ==> sudo yum install git -y
 D.Verify the installation by checking the version of Git:
 ==> git --version
-E.Configure your Git settings with your username and email:
-
+E.1.Configure your Git settings with your username and email to push into Remote repository:
 git config --global user.name “Your Name”
 git config --global user.email “your_email@example.com”
+E.2.Configure your Git settings with your username and password/Token to push into Remote repository:
+git push
+Username for 'https://github.com': prajwalhn06
+Password for 'https://prajwalhn06@github.com':<Github password or Token(it will be cretaed in Github->Settings->Developer setting->Personal access Token-> Generate token)>
+Token:
 
 You can now use Git on your EC2 instance to manage your source code repositories and collaborate with other developers.
