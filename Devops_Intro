@@ -1,0 +1,24 @@
+Welcom to Devops Intro
+
+1.Create an EC2 instance wit Linux(username:ec2-user) or Ubuntu(username:ubuntu)
+Linux:to install use "yum"
+Ubuntu:to install use "apt-get"
+
+2.Install Putty and create an Github account and create an token
+Github: https://github.com/prajwalhn06
+Putty: https://www.putty.org/
+
+3.Install Git and and connect with EC2 instance
+A.Connect to your EC2 instance via SSH.
+B.Update the package index
+==> sudo yum update -y
+C.Install Git using the following command:
+==> sudo yum install git -y
+D.Verify the installation by checking the version of Git:
+==> git --version
+E.Configure your Git settings with your username and email:
+
+git config --global user.name “Your Name”
+git config --global user.email “your_email@example.com”
+
+You can now use Git on your EC2 instance to manage your source code repositories and collaborate with other developers.
