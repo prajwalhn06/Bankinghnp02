@@ -55,3 +55,26 @@ wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bi
 tar xzvf apache-maven-3.9.6-bin.tar.gz
 "wget": wget solely lets you download files from the httpspr ftp server. You give it a link and it will automaticlayy downloads the file where the link points to.It basically helps to download Binaries.
 info: https://maven.apache.org/download.cgi
+
+7.Installing jenkins & working in it:
+info: https://www.redhat.com/sysadmin/install-jenkins-rhel8
+https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos
+
+To install Jenkins(please follw these 3 steps mentioned below)
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
+sudo dnf upgrade
+# Add required dependencies for the jenkins package
+sudo dnf install fontconfig java-17-openjdk (ignore if java installed)
+sudo dnf install jenkins
+
+Once installed jenkins try:
+servcie jenkins startup
+chkconfig jenkins on
+
+To check weather its installed or note try (ip.address:8080) by edit inbound rule for Custom 8080 port
+the it shows a path to get password to open the jenkins(cd /var/lib/jenkins/secrets/initialAdminPassword)
+
+
