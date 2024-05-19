@@ -9,7 +9,7 @@ info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/find-install-software.
 Github: https://github.com/prajwalhn06
 Putty: https://www.putty.org/
 
-3.Install Git and and connect with EC2 instance
+3.Install Git and and connect with EC2 instance.
 A.Connect to your EC2 instance via SSH.
 B.Update the package index
 ==> sudo yum update -y
